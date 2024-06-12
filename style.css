@@ -83,8 +83,8 @@ main {
 
 /* Responsive image size adjustments */
 .item img {
-    width:100px; /* approximately four times the size of an icon */
-    height: 100px;
+    width:50px; /* approximately four times the size of an icon */
+    height: 50px;
     display: block;
     margin: auto; /* center the image within the container */
 }
