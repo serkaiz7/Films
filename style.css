@@ -84,9 +84,9 @@ main {
 
 /* Responsive image size adjustments */
 .item img {
-    width: auto; /* Make the image responsive */
+    width: 100%; /* Make the image responsive */
     height: auto;
-    transform: scale(0.25); /* Scale the image to 50% of its original size */
+    transform: scale(0.5); /* Scale the image to 50% of its original size */
 }
 
 /* Play button styles */
@@ -151,7 +151,7 @@ main {
 /* Responsive design */
 @media (max-width: 600px) {
     .item {
-        width: 5%;
+        width: 100%;
     }
 
     .menu-btn {
@@ -163,6 +163,6 @@ main {
     }
 
     .item img {
-        transform: scale(0.25); /* Scale image to 50% for small screens */
+        transform: scale(0.5); /* Scale image to 50% for small screens */
     }
 }
