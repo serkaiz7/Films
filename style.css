@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #2c3e50, #4ca1af);
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header styles */
 header {
     background: #2c3e50;
     padding: 20px;
@@ -27,6 +29,7 @@ header h1 {
     font-size: 24px;
 }
 
+/* Sidebar navigation styles */
 nav#sidebar {
     background: #34495e;
     width: 200px;
@@ -58,6 +61,7 @@ nav#sidebar ul li a {
     display: block;
 }
 
+/* Main content styles */
 main {
     margin-left: 20px;
     padding: 20px;
@@ -77,11 +81,15 @@ main {
     position: relative;
 }
 
+/* Responsive image size adjustments */
 .item img {
-    width: 100%;
+    width: 100px; /* approximately four times the size of an icon */
+    height: 100px;
     display: block;
+    margin: auto; /* center the image within the container */
 }
 
+/* Play button styles */
 .play-btn {
     position: absolute;
     top: 50%;
@@ -93,6 +101,7 @@ main {
     opacity: 0.8;
 }
 
+/* Stats section styles */
 .stats {
     display: flex;
     justify-content: space-around;
@@ -109,6 +118,7 @@ main {
     margin-right: 5px;
 }
 
+/* Comment section styles */
 .comment-section {
     padding: 10px;
 }
@@ -136,4 +146,24 @@ main {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .item {
+        width: 100%;
+    }
+
+    .menu-btn {
+        font-size: 20px;
+    }
+
+    .play-btn {
+        font-size: 36px;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
 }
