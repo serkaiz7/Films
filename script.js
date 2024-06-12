@@ -14,13 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
             popupVideo.src = videoSrc;
             videoPopup.classList.add('active');
             popupVideo.play();
-            if (popupVideo.requestFullscreen) {
-                popupVideo.requestFullscreen();
-            } else if (popupVideo.webkitRequestFullscreen) { /* Safari */
-                popupVideo.webkitRequestFullscreen();
-            } else if (popupVideo.msRequestFullscreen) { /* IE11 */
-                popupVideo.msRequestFullscreen();
-            }
+            popupVideo.requestFullscreen().then(() => {
+                screen.orientation.lock('landscape');
+            });
         });
     });
 
@@ -29,12 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
             videoPopup.classList.remove('active');
             popupVideo.pause();
             popupVideo.currentTime = 0;
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
         }
     });
 
     popupVideo.addEventListener('fullscreenchange', function() {
-        if (document.fullscreenElement) {
-            screen.orientation.lock('landscape');
+        if (!document.fullscreenElement) {
+            screen.orientation.unlock();
         }
     });
 });
