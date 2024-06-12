@@ -162,8 +162,8 @@ main {
 }
 
 .video-popup video {
-    max-width: 45%;
-    max-height: 45%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .video-popup.active {
