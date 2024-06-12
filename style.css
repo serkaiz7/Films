@@ -84,7 +84,7 @@ main {
 
 /* Responsive image size adjustments */
 .item img {
-    width: 25%; /* Make the image responsive */
+    width: auto; /* Make the image responsive */
     height: auto;
     transform: scale(0.25); /* Scale the image to 50% of its original size */
 }
