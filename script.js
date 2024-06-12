@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('sidebar');
     const videoPopup = document.getElementById('video-popup');
     const popupVideo = document.getElementById('popup-video');
+    const main = document.querySelector('main');
 
     menuBtn.addEventListener('click', function() {
         sidebar.classList.toggle('active');
+        main.classList.toggle('active');
     });
 
     document.querySelectorAll('.play-btn').forEach(button => {
