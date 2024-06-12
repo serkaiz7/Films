@@ -86,7 +86,7 @@ main {
 .item img {
     width: 100%; /* Make the image responsive */
     height: auto;
-    transform: scale(0.5); /* Scale the image to 50% of its original size */
+    transform: scale(0.25); /* Scale the image to 50% of its original size */
 }
 
 /* Play button styles */
@@ -163,6 +163,6 @@ main {
     }
 
     .item img {
-        transform: scale(0.5); /* Scale image to 50% for small screens */
+        transform: scale(0.25); /* Scale image to 50% for small screens */
     }
 }
