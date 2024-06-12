@@ -83,8 +83,8 @@ main {
 
 /* Responsive image size adjustments */
 .item img {
-    width: 20px; /* approximately four times the size of an icon */
-    height: 20px;
+    width:100px; /* approximately four times the size of an icon */
+    height: 100px;
     display: block;
     margin: auto; /* center the image within the container */
 }
@@ -149,7 +149,7 @@ main {
 }
 
 /* Responsive design */
-@media (max-width: 600px) {
+@media (max-width: 60px) {
     .item {
         width: 100%;
     }
