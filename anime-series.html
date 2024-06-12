@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Series</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Anime Series</h1>
+        <button class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="anime-movies.html">Anime Movies</a></li>
+            <li><a href="anime-series.html">Anime Series</a></li>
+            <li><a href="cartoon-movies.html">Cartoon Movies</a></li>
+            <li><a href="cartoon-series.html">Cartoon Series</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Anime Series</h2>
+            <div class="content">
+                <div class="item">
+                    <img src="anime-series1.jpg" alt="Anime Series 1">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                    <video controls style="display: none;">
+                        <source src="anime-series1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Anime Series 1</p>
+                    <p>Description of Anime Series 1</p>
+                    <div class="stats">
+                        <div class="views"><i class="fas fa-eye"></i> 1234</div>
+                        <div class="likes"><i class="fas fa-thumbs-up"></i> 567</div>
+                    </div>
+                    <div class="comment-section">
+                        <h3>Comments</h3>
+                        <textarea placeholder="Add a comment..."></textarea>
+                        <button>Submit</button>
+                    </div>
+                </div>
+                <!-- Add more anime series here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
