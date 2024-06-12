@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartoon Movies</title>
+    <title>Cartoon Movies - Anime and Cartoons</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Cartoon Movies</h1>
+        <h1>Anime and Cartoons</h1>
         <button class="menu-btn" id="menu-btn">
             <i class="fas fa-bars"></i>
         </button>
     </header>
     <nav id="sidebar">
         <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="anime-movies.html">Anime Movies</a></li>
             <li><a href="anime-series.html">Anime Series</a></li>
             <li><a href="cartoon-movies.html">Cartoon Movies</a></li>
@@ -24,32 +23,22 @@
         </ul>
     </nav>
     <main>
-        <section>
+        <section class="category-header">
             <h2>Cartoon Movies</h2>
-            <div class="content">
-                <div class="item">
-                    <img src="cartoon-movie1.jpg" alt="Cartoon Movie 1">
-                    <div class="play-btn"><i class="fas fa-play"></i></div>
-                    <video controls style="display: none;">
-                        <source src="cartoon-movie1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Cartoon Movie 1</p>
-                    <p>Description of Cartoon Movie 1</p>
-                    <div class="stats">
-                        <div class="views"><i class="fas fa-eye"></i> 1234</div>
-                        <div class="likes"><i class="fas fa-thumbs-up"></i> 567</div>
-                    </div>
-                    <div class="comment-section">
-                        <h3>Comments</h3>
-                        <textarea placeholder="Add a comment..."></textarea>
-                        <button>Submit</button>
-                    </div>
-                </div>
-                <!-- Add more cartoon movies here -->
+            <p>Explore the best of Cartoon Movies. Select a video to start watching.</p>
+        </section>
+        <section class="content">
+            <!-- Sample video item -->
+            <div class="item">
+                <img src="sample.jpg" alt="Sample Video">
+                <i class="fas fa-play play-btn" data-video="sample.mp4"></i>
             </div>
+            <!-- Add more video items as needed -->
         </section>
     </main>
+    <div id="video-popup" class="video-popup">
+        <video id="popup-video" controls></video>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
