@@ -149,9 +149,9 @@ main {
 }
 
 /* Responsive design */
-@media (max-width: 60px) {
+@media (max-width: 600px) {
     .item {
-        width: 100%;
+        width: 50%;
     }
 
     .menu-btn {
